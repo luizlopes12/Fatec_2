@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    background: #51DDF0;
+}
+
+:root{
+    --blue-color: #51DDF0;
+    --button-color: #4E9FDA;
+    --dark-blue: #3687C2;
+    --grey: #F6F6F6;
+    --dark-grey: #a9a9a980;
+}
+
+.form__container{
+    
+}
