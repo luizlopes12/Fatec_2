@@ -10,7 +10,14 @@
 <body>
     <section class="form__section">
         <div class="form__container">
-
+                <input type="text" class="hero__name" placeholder="Nome do Herói">
+                <select id="hero-universe" class="hero__universe">
+                    <option value="" selected>Universo</option>
+                    <option value="marvel">Marvel</option>
+                    <option value="dc">DC</option>
+                </select>
+                <input type="number" class="hero__reps">
+                <button onclick="repeatHero()">Iniciar</button>
         </div>
     </section>
 </body>
