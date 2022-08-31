@@ -19,19 +19,21 @@ body{
 
 .form__section{
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .1s ease-in-out;
 }
 .form__container{
-    width: 500px;
+    min-width: 500px;
     border-radius: 0 0 10px 10px;
-    padding: 10px;
+    padding: 25px;
     background: #fff;
     box-shadow: 0px 4px 14px 6px rgba(0,0,0,0.2);
     display: flex;
     justify-content: center;
+    transition: all .1s ease-in-out;
 }
 
 .form__container .hero__name{
@@ -49,4 +51,39 @@ body{
     color: var(--text-color);
     outline: none;
     padding: 8px 10px;
+}
+
+.form__container .hero__reps{
+    background: var(--grey);
+    border: 1px solid var(--dark-grey);
+    border-right: 0;
+    color: var(--text-color);
+    outline: none;
+    padding: 8px 10px;
+}
+
+.form__container .hero__reps::-webkit-outer-spin-button,
+.form__container .hero__reps::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form__container .hero__btn{
+    border: 2px solid var(--dark-blue);
+    border-left: 0;
+    border-radius: 0 0 12px 0;
+    background: var(--button-color);
+    color: #fff;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+}
+
+.form__container .hero__btn:hover{
+    background: var(--dark-blue);
+    cursor: pointer;
+}
+
+.grid__section .hero__card{
+    padding: 20px;
+
 }
