@@ -6,7 +6,10 @@
     --grey: #F6F6F6;
     --dark-grey: #a9a9a980;
     --text-color: #505050;
+
 }
+
+
 
 body{
     margin: 0;
@@ -26,7 +29,7 @@ body{
     transition: all .1s ease-in-out;
 }
 .form__container{
-    min-width: 500px;
+    min-width: 30%;
     border-radius: 0 0 10px 10px;
     padding: 25px;
     background: #fff;
