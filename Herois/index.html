@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/script/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Heróis bolados</title>
 </head>
 <body>
     <section class="form__section">
         <div class="form__container">
-                <input type="text" class="hero__name" placeholder="Nome do Herói">
+                <input type="text" id="hero-name" class="hero__name" placeholder="Nome do Herói">
                 <select id="hero-universe" class="hero__universe">
                     <option value="" selected>Universo</option>
-                    <option value="marvel">Marvel</option>
-                    <option value="dc">DC</option>
+                    <option value="MARVEL">Marvel</option>
+                    <option value="DC">DC</option>
                 </select>
-                <input type="number" class="hero__reps" placeholder="Repetições">
+                <input type="number" class="hero__reps" id="hero-reps" placeholder="Repetições">
                 <button class="hero__btn" onclick="repeatHero()">Iniciar</button>
         </div>
+        <section class="grid__section" id="cards-grid">
+            <div class="hero__card hide" id="card-item">
+                    <div class="card__image" id="card-img">
+                    </div>
+                    <div class="card__text" id="card-text">                    
+                    </div>
+            </div>
+        </section>
     </section>
-    <section class="grid__section">
-        <div class="hero__card">
-            
-        </div>
-    </section>
+
 </body>
 </html>
