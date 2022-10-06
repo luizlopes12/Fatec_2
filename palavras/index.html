@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-'F'">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opa</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <table class="table"></table>
+    <script>
+        let table = document.querySelector(".table");
+        let palavras = [['D','D','A','J','G','R','H','V','Ç','M'],
+                        ['E','A','F','E','N','R','A','A','R','A'],
+                        ['K','A','G','D','I','R','N','D','E','N'],
+                        ['U','H','A','I','W','R','S','E','K','D'],
+                        ['L','B','G','I','X','R','O','R','L','O'],
+                        ['I','O','O','O','E','R','L','F','A','E'],
+                        ['K','P','D','B','Ç','L','O','F','W','E'],
+                        ['L','P','V','G','A','R','H','F','Y','E'],
+                        ['C','G','O','L','K','R','D','F','K','E'],
+                        ['Y','O','D','A','K','R','H','F','S','E']];
+
+        let mapping =  [[0,0,0,1,6,0,1,5,0,3], 
+                        [1,0,0,1,6,0,1,5,4,3],
+                        [1,0,0,1,6,0,1,5,4,3],
+                        [1,0,1,1,6,0,1,5,4,3],
+                        [1,1,0,1,6,0,1,5,4,3],
+                        [0,0,1,0,6,0,1,0,4,0],
+                        [0,0,0,1,0,1,1,0,4,0],
+                        [0,0,0,0,1,0,0,0,4,0],
+                        [0,0,0,0,0,0,0,0,4,0],
+                        [2,2,2,2,0,0,0,0,4,0]];
+
+        for(linha = 0; linha < 10; linha++)
+        {   
+            tr = document.createElement("tr");
+            for(coluna = 0; coluna < 10; coluna++)
+            {
+                td = document.createElement("td");
+                switch(mapping[linha][coluna]){
+                    case 1:
+                    td.style.background = "#3acc4d";
+                    td.append(palavras[linha][coluna]);
+                    tr.append(td);
+                    break;
+                    case 2:
+                    td.style.background = "#cc3a3a";
+                    td.append(palavras[linha][coluna]);
+                    tr.append(td);
+                    break;
+                    case 3:
+                    td.style.background = "#3a79cc";
+                    td.append(palavras[linha][coluna]);
+                    tr.append(td);
+                    break;
+                    case 4:
+                    td.style.background = "#cc3ab4";
+                    td.append(palavras[linha][coluna]);
+                    tr.append(td);
+                    break;
+                    case 5:
+                    td.style.background = "#3accb9";
+                    td.append(palavras[linha][coluna]);
+                    tr.append(td);
+                    break;
+                    case 6:
+                    td.style.background = "#3a61cc";
+                    td.append(palavras[linha][coluna]);
+                    tr.append(td);
+                    break;
+                    default:                    
+                        td.append(palavras[linha][coluna]);
+                        tr.append(td);
+                    break;
+                }
+            }
+            table.appendChild(tr);
+        }
+    </script>
+</body>
+</html>
